@@ -2,11 +2,10 @@ import { Component, EventEmitter, Input, Output, output } from '@angular/core';
 import {UpperCasePipe} from '@angular/common';
 import { ProductInterface } from '@shared/components/models/product.model';
 import { CommonModule } from '@angular/common';
-import { Highlight } from '@shared/directives/highlight';
 
 @Component({
   selector: 'app-product',
-  imports: [CommonModule, Highlight],
+  imports: [CommonModule],
   templateUrl: './product.html',
   styleUrl: './product.css'
 })
