@@ -2,14 +2,13 @@ import { Component, signal, inject } from '@angular/core';
 import { Product } from './../../components/product/product';
 import { CommonModule } from '@angular/common';
 import { ProductInterface } from '@shared/components/models/product.model'
-import { Header } from '@shared/components/header/header';
 import { Cart } from '@shared/services/cart';
 import { ProductService } from '@shared/services/product';
 
 
 @Component({
   selector: 'app-list',
-  imports: [CommonModule, Product, Header],
+  imports: [CommonModule, Product],
   templateUrl: './list.html',
   standalone: true,
   styleUrl: './list.css'

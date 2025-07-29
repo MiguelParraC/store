@@ -1,17 +1,19 @@
 <header class="bg-white dark:bg-gray-900 shadow-md">
     <div class="container mx-auto px-4 py-4 flex items-center justify-between">
         <!-- Logo -->
-        <a routerLink="/" class="text-2xl font-bold text-blue-600 dark:text-blue-400">
+        <a routerLink="/" routerLinkActive="underline" [routerLinkActiveOptions]="{ exact: true}" class="text-2xl font-bold text-blue-600 dark:text-blue-400">
             Mi Logo
         </a>
 
         <!-- Navigation -->
         <nav class="hidden md:flex space-x-6">
-            <a routerLink="about"
+            <a routerLink="/" routerLinkActive="underline" [routerLinkActiveOptions]="{ exact: true}"
+                class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">Home</a>
+            <a routerLink="about" routerLinkActive="underline"
                 class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">About</a>
-            <a routerLink="services"
+            <a routerLink="services" routerLinkActive="underline"
                 class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">Services</a>
-            <a routerLink="contact"
+            <a routerLink="contact" routerLinkActive="underline"
                 class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">Contact</a>
         </nav>
 
@@ -20,7 +22,8 @@
             class="relative text-2xl text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">
             🛒
             <!-- Badge (opcional) -->
-            <span class="absolute -top-1 -right-2 text-xs bg-red-500 text-white rounded-full px-1">{{ cart().length }} </span>
+            <span class="absolute -top-1 -right-2 text-xs bg-red-500 text-white rounded-full px-1">{{ cart().length }}
+            </span>
         </button>
 
         <!-- Mobile Menu Button -->
@@ -50,7 +53,7 @@
             </div>
         </div>
         <div>
-            <div class = "flex justify-end">
+            <div class="flex justify-end">
                 <p class="text-lg font-bold">Total: ${{ total() }}</p>
             </div>
         </div>

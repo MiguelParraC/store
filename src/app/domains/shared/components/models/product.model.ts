@@ -1,3 +1,5 @@
+import { CategoryInterface } from "./category.mode";
+
 export interface ProductInterface {
   id: number;
   title: string;
@@ -5,4 +7,5 @@ export interface ProductInterface {
   description: string;
   images: string[];
   creationAt: string;
+  category: CategoryInterface
 }

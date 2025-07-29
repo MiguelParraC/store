@@ -1,6 +1,6 @@
 <div
     class="mt-6 w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="#" class="w-full overflow-hidden rounded-t-lg bg-gray-200">
+    <a [routerLink]="['/product', product.id]" class="w-full overflow-hidden rounded-t-lg bg-gray-200">
         <img [src]="product.images[0]" [alt]="product.title"
             class="h-full w-full object-cover rounded-lg object-center group-hover:opacity-75">
     </a>
